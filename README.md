@@ -5,4 +5,4 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
-|[01](https://github.com/ayaromenok/test_p3d/issues/01) | ![](https://github.com/ayaromenok/test_p3d/blob/master/01__repo_setup/png/01.png){:height="64px" width="64px"} | NoK | comment |\n
+|[01](https://github.com/ayaromenok/test_p3d/issues/01) | ![](https://github.com/ayaromenok/test_p3d/blob/master/01__repo_setup/png/01.png) | OK | image size for issue may be changed |\n
