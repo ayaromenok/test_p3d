@@ -5,4 +5,4 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
-|[01](https://github.com/ayaromenok/test_p3d/issues/01) | ![](https://github.com/ayaromenok/test_p3d/blob/master/01__repo_setup/png/01.png) | NoK | comment |\n
+|[01](https://github.com/ayaromenok/test_p3d/issues/01) | ![](https://github.com/ayaromenok/test_p3d/blob/master/01__repo_setup/png/01.png =64x64) | NoK | comment |\n
