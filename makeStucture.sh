@@ -18,7 +18,7 @@ echo "dxf/*.dxf~" > .gitignore
 cd scad
 FNAME=${1##*_}".scad"
 echo $FNAME
-echo -e "include <../../../../p3d/lib/lib2.scad>\n\n${1##*_}();\n\nmodule ${1##*_}(px=0,py=0,pz=0, rx=0,ry=0,rz=0){\n    translate([(px),(py),pz])\n    rotate([rx,ry,rz]){\n        yCube(30,20,10);\n    }//transform\n}//module\n" > $FNAME
+echo -e "include <../../../../p3d/lib/lib2.scad>\n\n${1##*_}();\n\nmodule ${1##*_}(px=0,py=0,pz=0, rx=0,ry=0,rz=0){\n    translate([px,py,pz])\n    rotate([rx,ry,rz]){\n        yCube(30,20,10);\n    }//transform\n}//module\n" > $FNAME
 cd ..
 echo -e "## main/readme" > readme.md
 cd ..
