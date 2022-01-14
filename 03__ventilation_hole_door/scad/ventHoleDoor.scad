@@ -7,6 +7,7 @@ include <../../../../p3d/lib/lib2/ext/servo.scad>
 //ventHoleDoorBot(showMetal=false, showRubber=false);
 //ventHoleDoorArmP0(0,6,0);
 //ventHoleDoorArmP1(0,-6,0, -90,0,0);
+//ventHoleDoorArmP1();
 assembly();
 
 module assembly(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
@@ -36,12 +37,15 @@ module ventHoleDoorArmP1(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([(px),(py),pz])
     rotate([rx,ry,rz]){
         difference(){
-            yMinkCubeCyl(30,8,10,3.8);
-            yCyl(1.5,12, 11,0,0);
-            yCyl(6,5, 11,0,0);
+            union(){                
+                yMinkCubeCyl(30,8,11,3.8, 0,0,0);
+                yMinkCubeCyl(8,14,11,3.8, 11,-5,0);
+            }//union
+            yCyl(1.5,12, 11,-8,0);
+            yCyl(6,5, 11,-8,0);
             yCyl(1.6,12, -11,0,0);
-            yCyl(6,5, -11,0,0);
-            yCube(30,10,5, 0,-8,0, 0,0,40);
+            yCyl(7.5,5.2, -11,0,0);
+            yCube(31,10,5.2, 0,-6,0, 0,0,0);
         }//difference
          
     }//transform
@@ -64,7 +68,7 @@ module ventHoleDoorBot(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=155, width=92, sho
             //yMinkCubeCyl(24,7,4,2, -(length/2-21),0,0, 90,00,0);
         }
         difference(){
-            yCube(40,30,13, (-length/2+22),-28,0);
+            yCube(45,30,13, (-length/2+24),-28,0);
             servoSg90_cut(-(length/2-25),-18,0,90,0,180);
             yCube(2,50,4,   (-length/2+36),(-width/2),5);
         }//difference
