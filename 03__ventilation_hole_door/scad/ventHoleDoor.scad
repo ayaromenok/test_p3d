@@ -14,9 +14,9 @@ module assembly(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([(px),(py),pz])
     rotate([rx,ry,rz]){
         ventHoleDoorBot();
-        ventHoleDoorTop(2,0,29, 180,11,0);
+        ventHoleDoorTop(2,0,31, 180,11,0);
         ventHoleDoorArmP0(-40,0,7, 90,-45,0);
-        ventHoleDoorArmP1(-39,0,23, 90,48,0);
+        ventHoleDoorArmP1(-39,0,24, 90,48,0);
     }//transform
 }//module
 
@@ -55,11 +55,11 @@ module ventHoleDoorBot(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=155, width=92, sho
     translate([(px),(py),pz])
     rotate([rx,ry,rz]){
         difference(){
-            yCube(length,width,13);
-            yCube(length-26,width-16,14,    -5,0,0);
-            yCyl(7.5,width/2, (length/2-5),(width/2+3),9, 90,0,0);
-            yCyl(7.5,width/2, (length/2-5),(-width/2-3),9, 90,0,0);
-            yCube(2,50,4,   (-length/2+36),(-width/2),5);
+            yCube(length,width,15, 0,0,1);
+            yCube(length-26,width-16,16,    -5,0,1);
+            yCyl(7.5,width/2, (length/2-5),(width/2+3),11, 90,0,0);
+            yCyl(7.5,width/2, (length/2-5),(-width/2-3),11, 90,0,0);
+            yCube(2,50,4,   (-length/2+36),(-width/2),7);
         }//difference        
         if(showMetal){
             color("green"){
@@ -74,8 +74,8 @@ module ventHoleDoorBot(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=155, width=92, sho
         }//difference
         
         
-        yTube(5,0.8,6, (length/2-5),(width/4),9, 90,0,0);
-        yTube(5,0.8,6, (length/2-5),(-width/4),9, 90,0,0);
+        yTube(5,0.8,6, (length/2-5),(width/4),11, 90,0,0);
+        yTube(5,0.8,6, (length/2-5),(-width/4),11, 90,0,0);
         
         if(showRubber){
             color("darkblue"){
