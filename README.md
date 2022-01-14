@@ -5,6 +5,7 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
+|[04](https://github.com/ayaromenok/test_p3d/issues/04) | ![](https://github.com/ayaromenok/test_p3d/blob/master/04__copterChassisFor2212/png/04.png) | WiP | comment |\n
 |[03](https://github.com/ayaromenok/test_p3d/issues/03) | ![](https://github.com/ayaromenok/test_p3d/blob/master/03__ventilation_hole_door/png/03.png) | OK | Can be test with more powerful servo |\n
 |[02](https://github.com/ayaromenok/test_p3d/issues/02) | ![](https://github.com/ayaromenok/test_p3d/blob/master/02__light_construction/png/02.png) | WiP | HIPS used for testing |\n
 |[01](https://github.com/ayaromenok/test_p3d/issues/01) | ![](https://github.com/ayaromenok/test_p3d/blob/master/01__repo_setup/png/01.png) | OK | image size for issue may be changed |\n
