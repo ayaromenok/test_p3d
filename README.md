@@ -5,8 +5,8 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
-|[06](https://github.com/ayaromenok/test_p3d/issues/06) | ![](https://github.com/ayaromenok/test_p3d/blob/master/06__mesh0AD/png/06.png) | OK | comment |\n
-|[05](https://github.com/ayaromenok/test_p3d/issues/05) | ![](https://github.com/ayaromenok/test_p3d/blob/master/05__gearsNonRegular/png/05.png) | NoK | comment |\n
+|[06](https://github.com/ayaromenok/test_p3d/issues/06) | ![](https://github.com/ayaromenok/test_p3d/blob/master/06__mesh0AD/png/06.png) | OK | animations/meshes is OK |\n
+|[05](https://github.com/ayaromenok/test_p3d/issues/05) | ![](https://github.com/ayaromenok/test_p3d/blob/master/05__gearsNonRegular/png/05.png) | OK | workds well |\n
 |[04](https://github.com/ayaromenok/test_p3d/issues/04) | ![](https://github.com/ayaromenok/test_p3d/blob/master/04__copterChassisFor2212/png/04.png) | WiP | comment |\n
 |[03](https://github.com/ayaromenok/test_p3d/issues/03) | ![](https://github.com/ayaromenok/test_p3d/blob/master/03__ventilation_hole_door/png/03.png) | OK | Can be test with more powerful servo |\n
 |[02](https://github.com/ayaromenok/test_p3d/issues/02) | ![](https://github.com/ayaromenok/test_p3d/blob/master/02__light_construction/png/02.png) | WiP | HIPS used for testing |\n
