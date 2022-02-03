@@ -5,7 +5,8 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
-|[07](https://github.com/ayaromenok/test_p3d/issues/07) | ![](https://github.com/ayaromenok/test_p3d/blob/master/07__amg8833Connetor/png/07.png) | WiP | comment |\n
+|[08](https://github.com/ayaromenok/test_p3d/issues/08) | ![](https://github.com/ayaromenok/test_p3d/blob/master/08__wingSection/png/08.png) | WiP | print test required |\n
+|[07](https://github.com/ayaromenok/test_p3d/issues/07) | ![](https://github.com/ayaromenok/test_p3d/blob/master/07__amg8833Connetor/png/07.png) | OK | ok |\n
 |[06](https://github.com/ayaromenok/test_p3d/issues/06) | ![](https://github.com/ayaromenok/test_p3d/blob/master/06__mesh0AD/png/06.png) | OK | animations/meshes is OK |\n
 |[05](https://github.com/ayaromenok/test_p3d/issues/05) | ![](https://github.com/ayaromenok/test_p3d/blob/master/05__gearsNonRegular/png/05.png) | OK | workds well |\n
 |[04](https://github.com/ayaromenok/test_p3d/issues/04) | ![](https://github.com/ayaromenok/test_p3d/blob/master/04__copterChassisFor2212/png/04.png) | WiP | comment |\n
