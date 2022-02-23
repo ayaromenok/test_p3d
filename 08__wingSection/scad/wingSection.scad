@@ -1,7 +1,8 @@
 include <../../../../p3d/lib/lib2.scad>
 
 wingSection();
-
+//3016mm withou antitwist box
+//3800mm with
 module wingSection(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=80){
     translate([px,py,pz])
     rotate([rx,ry,rz]){
@@ -11,9 +12,11 @@ module wingSection(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=80){
         
         yCube(5,length,1.21,    49,0,1.7, 0,-30,0);
         longeron(length,12.8, 15);         
-        longeron(length,12.4, -20); 
+        longeron(length,12.4, -15); 
         longeron(length,9.3, -50); 
         yCube(6,length,0.81,    -98,0,0.4);
+        //for avoiding twist
+        yCube(30,20,12.6, 0,0,6.3);
     }//transform
 }//module
 module longeron(length=60, height=13, px=0,py=0,pz=0, rx=0,ry=0,rz=0){
