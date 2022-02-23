@@ -25,8 +25,8 @@ module catamaranHullBot(px=0,py=0,pz=0, rx=0,ry=0,rz=0, part=0){
                     yCube(720,200,100,  360,0,105);
                 }//difference        
             }//union
-            yCube(800,150,150, part*178-400,0,75);   
-            yCube(800,150,150, (part+1)*178+400,0,75);        
+            yCube(800,150,150, part*178-400,0,74);   
+            yCube(800,150,150, (part+1)*178+400,0,74);        
         }//difference                
     }//transform
 }//module
