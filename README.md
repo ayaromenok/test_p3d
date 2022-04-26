@@ -5,6 +5,7 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
+|[10](https://github.com/ayaromenok/test_p3d/issues/10) | ![](https://github.com/ayaromenok/test_p3d/blob/master/10__catamaranHullFreeCad/png/10.png) | WiP | DXF>SVG>Loft>3D Offset(intersection + Fill-offset) |\n
 |[09](https://github.com/ayaromenok/test_p3d/issues/09) | ![](https://github.com/ayaromenok/test_p3d/blob/master/09__catamaranHull/png/09.png) | WiP | size is 716x120x105(old is 550x90x70) |\n
 |[08](https://github.com/ayaromenok/test_p3d/issues/08) | ![](https://github.com/ayaromenok/test_p3d/blob/master/08__wingSection/png/08.png) | OK | print test OK with coPet |\n
 |[07](https://github.com/ayaromenok/test_p3d/issues/07) | ![](https://github.com/ayaromenok/test_p3d/blob/master/07__amg8833Connetor/png/07.png) | OK | ok |\n
