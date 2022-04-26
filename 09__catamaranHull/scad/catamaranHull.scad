@@ -1,13 +1,15 @@
 include <../../../../p3d/lib/lib2.scad>
 
 
-//catamaranHullBot(part=3);
-catamaranHullTop(part=3);
+//catamaranHullBot(part=0, rx=180);
+//catamaranHullBot(part=0, px=5,pz=-5,rx=180);
+//catamaranHullTop(part=0);
 
 
-module catamaranHullBot(px=0,py=0,pz=0, rx=0,ry=0,rz=0, part=0){
+module catamaranHullBot(px=0,py=0,pz=0, rx=0,ry=0,rz=0, sx=1,sy=1,sz=1, part=0){
     translate([px,py,pz])
-    rotate([rx,ry,rz]){
+    rotate([rx,ry,rz])
+    scale([sx,sy,sz]){
         difference(){
             union(){
                 difference(){
