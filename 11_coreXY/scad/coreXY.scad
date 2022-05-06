@@ -1,8 +1,8 @@
 include <../../../../p3d/lib/lib2.scad>
 
 assembly();
-//topCenter();
-
+//topCenter(13,0,0, -90,0,0);
+      
 module assembly(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz]){
@@ -18,7 +18,7 @@ module assembly(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
         topCenter(13,0,0, 90,0,90);
         
         topMotor(110,117,11.5, dir=0);
-        topMotor(110,-117,11.5, dir=1);
+        topMotor(110,-117,21.5, dir=1);
         topIdle(-100,117,11.5,dir=1);
         topIdle(-100,-117,11.5, my=1, dir=0);
         //chassis
@@ -108,14 +108,27 @@ module topCenter(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz]){
         difference(){
-            yCube(45.46,27,8);
+            yCube(30,28,8);
             //holes for connectors
             yCyl(1.8,20,    10,10,0);
             yCyl(1.8,20,    10,-10,0);
             yCyl(1.8,20,    -10,10,0);
             yCyl(1.8,20,    -10,-10,0);
+            //additional            
+            yCyl(0.8,20,    10,5,0);
+            yCyl(0.8,20,    10,-5,0);
+            yCyl(0.8,20,    0,5,0);
+            yCyl(0.8,20,    0,-5,0);
+            yCyl(0.8,20,    -10,5,0);
+            yCyl(0.8,20,    -10,-5,0);            
         }//diff
-        yCube(50,3,40,  0,10,-10);
+        difference(){
+            yCube(50,3,40,  0,15.3,-10);
+            yCyl(1.8,20,    20,10,0, 90,0,0);
+            yCyl(1.8,20,    20,10,-25, 90,0,0);
+            yCyl(1.8,20,    -20,10,0, 90,0,0);
+            yCyl(1.8,20,    -20,10,-25, 90,0,0);
+        }//diff
     }//transform
 }//module
 
