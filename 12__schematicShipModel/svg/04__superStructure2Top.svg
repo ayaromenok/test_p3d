@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:lc="https://librecad.org" xmlns:xlink="http://www.w3.org/1999/xlink" width="668mm" height="44mm" viewBox="0 0 668 44">
+    <g lc:layername="04__superstructure_2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <circle cx="615" cy="22" r="7.07106781"/>
+        <path d="M369,22 L369,26 L355,31 L346,31 L341,26 L341,22 L341,18 L346,13 L355,13 L369,18 L369,22 Z "/>
+        <path d="M426,22 L422,30 L413,30 L409,22 L413,14 L422,14 L426,22 Z "/>
+        <path d="M522,22 L522,33 L505,43 L479,42 L479,36 L463,36 L457,22 L463,8 L479,8 L479,2 L505,1 L522,11 L522,22 Z "/>
+        <path d="M558,22 L558,27 L525,27 L525,22 L525,17 L558,17 L558,22 Z "/>
+        <path d="M603,22 L601,37 L592,43 L585,44 L572,38 L571,22 L572,6 L585,0 L592,1 L601,7 L603,22 Z "/>
+        <path d="M668,22 L668,27 L656,34 L647,34 L640,31 L640,22 L640,13 L647,10 L656,10 L668,17 L668,22 Z "/>
+        <circle cx="1" cy="22" r="1"/>
+    </g>
+</svg>

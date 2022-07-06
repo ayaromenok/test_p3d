@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:lc="https://librecad.org" xmlns:xlink="http://www.w3.org/1999/xlink" width="795mm" height="104mm" viewBox="0 0 795 104">
+    <g lc:layername="02__armament" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <circle cx="262" cy="52" r="29.06888371"/>
+        <circle cx="724" cy="55" r="29.06888371"/>
+        <path d="M307,43 L327,43 L327,59 L307,59 L307,43 "/>
+        <path d="M393,8 L411,8 L411,20 L393,20 L393,8 "/>
+        <path d="M434,0 L453,0 L453,12 L434,12 L434,0 "/>
+        <path d="M495,0 L521,0 L521,15 L495,15 L495,0 "/>
+        <path d="M528,2 L543,2 L543,15 L528,15 L528,2 "/>
+        <path d="M567,6 L584,6 L584,21 L567,21 L567,6 "/>
+        <path d="M750,34 L722,29 L694,30 L691,54 L693,77 L724,78 L750,74 L751,55 L750,34 Z "/>
+        <path d="M795,39 L748,39 L748,42 L795,42 L795,39 "/>
+        <path d="M749,56 L795,56 L795,53 L749,53 L749,56 "/>
+        <path d="M748,71 L795,71 L795,68 L748,68 L748,71 "/>
+        <path d="M236,31 L264,26 L292,27 L295,51 L293,74 L262,75 L236,71 L235,52 L236,31 Z "/>
+        <path d="M191,36 L238,36 L238,39 L191,39 L191,36 "/>
+        <path d="M237,53 L191,53 L191,50 L237,50 L237,53 "/>
+        <path d="M238,68 L191,68 L191,65 L238,65 L238,68 "/>
+        <path d="M393,96 L411,96 L411,84 L393,84 L393,96 "/>
+        <path d="M434,104 L453,104 L453,92 L434,92 L434,104 "/>
+        <path d="M495,104 L521,104 L521,89 L495,89 L495,104 "/>
+        <path d="M528,102 L543,102 L543,89 L528,89 L528,102 "/>
+        <path d="M567,98 L584,98 L584,83 L567,83 L567,98 "/>
+        <path d="M141,36 L138,21 L97,27 L101,42 L141,36 Z "/>
+        <path d="M141,68 L138,83 L97,77 L101,62 L141,68 Z "/>
+        <circle cx="1" cy="52" r="1"/>
+    </g>
+</svg>
