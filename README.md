@@ -5,6 +5,9 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
+
+|[12](https://github.com/ayaromenok/test_p3d/issues/12) | ![](https://github.com/ayaromenok/test_p3d/blob/master/12__schematicShipModel/png/12.png) | WiP | comment |\n
+
 |[10](https://github.com/ayaromenok/test_p3d/issues/10) | ![](https://github.com/ayaromenok/test_p3d/blob/master/10__catamaranHullFreeCad/png/10.png) | OK | DXF>SVG>Loft>3D Offset(intersection + Fill-offset) |\n
 |[09](https://github.com/ayaromenok/test_p3d/issues/09) | ![](https://github.com/ayaromenok/test_p3d/blob/master/09__catamaranHull/png/09.png) | OK | size is 716x120x105(old is 550x90x70) |\n
 |[08](https://github.com/ayaromenok/test_p3d/issues/08) | ![](https://github.com/ayaromenok/test_p3d/blob/master/08__wingSection/png/08.png) | OK | print test OK with coPet |\n
@@ -15,4 +18,3 @@
 |[03](https://github.com/ayaromenok/test_p3d/issues/03) | ![](https://github.com/ayaromenok/test_p3d/blob/master/03__ventilation_hole_door/png/03.png) | OK | Can be test with more powerful servo |\n
 |[02](https://github.com/ayaromenok/test_p3d/issues/02) | ![](https://github.com/ayaromenok/test_p3d/blob/master/02__light_construction/png/02.png) | WiP | HIPS used for testing |\n
 |[01](https://github.com/ayaromenok/test_p3d/issues/01) | ![](https://github.com/ayaromenok/test_p3d/blob/master/01__repo_setup/png/01.png) | OK | image size for issue may be changed |\n
-
