@@ -1,7 +1,11 @@
 include <../../../../p3d/lib/lib2.scad>
 
+
+
 catamaranHullBooleanFront(0,200,0);
 catamaranHullBooleanBack(0,0,0);
+//yCube(300,200,200,  150+300,100,100);
+
 module catamaranHullBooleanBack(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz]){
@@ -22,10 +26,10 @@ module catamaranHullBooleanFront(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
             translate([-200, 0, 0])       
             polygon(points=[[5,0],[0,5],[4,60],[8,63],[20,130],[106,190],[126,0]]);
             
-            yTube(300,195,200,  0,0,18,  -55.2,0,0, 2.75,1,1, $fn=300);       
-            
-            yTube(400,195,300,  -50,-275,50,  6,0,0, 5,1,1, $fn=3000);       
+            yTube(300,195,200,  0,0,18,  -55.2,0,0, 2.75,1,1, $fn=300);            
+            yTube(400,195,300,  -50,-275,50,  6,0,0, 5,1,1, $fn=300);       
         }//difference
+                  
     }//transform
 }//module
 
