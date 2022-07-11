@@ -3,8 +3,21 @@ include <../../../../p3d/lib/lib2.scad>
 
 
 catamaranHullBooleanFront(0,200,0);
-catamaranHullBooleanBack(0,0,0);
+catamaranHullBooleanBack(0,100,0);
 //yCube(300,200,200,  150+300,100,100);
+
+module chbConnector(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=210, width=30, height=5){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        difference(){
+            yCube(length,width,height, 0,0,0);
+            for(i=[-(length/2):20:(length/2)]){
+                yCyl(1,height+10,  i,10,0);
+                yCyl(1,height+10,  i,-10,0);
+            }//for
+        }//difference
+    }//transform
+}//module
 
 module catamaranHullBooleanBack(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
@@ -13,7 +26,9 @@ module catamaranHullBooleanBack(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
         rotate([0,90,0])
                 //color("blue")
                 linear_extrude(600, scale=0.9)
+                translate([-100, 0, 0])   
                 polygon(points=[[12,0],[7,5],[11,60],[15,63],[42,130],[109.5,160],[126,0]]);
+                chbConnector(300,24,15, 90,0,0, length=600, height =8);
     }//transform
 }//module
 
@@ -29,7 +44,7 @@ module catamaranHullBooleanFront(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
             yTube(300,195,200,  0,0,18,  -55.2,0,0, 2.75,1,1, $fn=300);            
             yTube(400,195,300,  -50,-275,50,  6,0,0, 5,1,1, $fn=300);       
         }//difference
-                  
+        chbConnector(-100,-76,15, 90,0,0, length=200, height =8);
     }//transform
 }//module
 
@@ -46,6 +61,7 @@ module catamaranHullBoolean2(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
             
             yTube(400,195,200,  -50,-320,50,  7.5,0,0, 5,1,1, $fn=90);       
         }//difference           
+        
     }//transform
 }//module
 module catamaranHullBoolean(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
