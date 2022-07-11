@@ -1,6 +1,34 @@
 include <../../../../p3d/lib/lib2.scad>
 
-catamaranHullBoolean2(0,120,0);
+catamaranHullBooleanFront(0,200,0);
+catamaranHullBooleanBack(0,0,0);
+module catamaranHullBooleanBack(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        rotate([90,0,0])
+        rotate([0,90,0])
+                //color("blue")
+                linear_extrude(600, scale=0.9)
+                polygon(points=[[12,0],[7,5],[11,60],[15,63],[42,130],[109.5,160],[126,0]]);
+    }//transform
+}//module
+
+module catamaranHullBooleanFront(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        difference(){
+            scale([3,1,1])
+            rotate_extrude(angle=90, $fn=300 )
+            translate([-200, 0, 0])       
+            polygon(points=[[5,0],[0,5],[4,60],[8,63],[20,130],[106,190],[126,0]]);
+            
+            yTube(300,195,200,  0,0,18,  -55.2,0,0, 2.75,1,1, $fn=300);       
+            
+            yTube(400,195,300,  -50,-275,50,  6,0,0, 5,1,1, $fn=3000);       
+        }//difference
+    }//transform
+}//module
+
 module catamaranHullBoolean2(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz]){
@@ -13,9 +41,8 @@ module catamaranHullBoolean2(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
             yTube(300,195,200,  0,0,0,  -45,0,0, 2.7,1,1, $fn=90);       
             
             yTube(400,195,200,  -50,-320,50,  7.5,0,0, 5,1,1, $fn=90);       
-            }
-            
-      }//transform
+        }//difference           
+    }//transform
 }//module
 module catamaranHullBoolean(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
