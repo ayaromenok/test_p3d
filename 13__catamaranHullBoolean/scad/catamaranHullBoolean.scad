@@ -1,10 +1,58 @@
 include <../../../../p3d/lib/lib2.scad>
 
+//left
+catamaranHullBoolean4(0,200,0);
+//right
+//mirror([0,0,1])
+//catamaranHullBoolean4(0,200,0);
 
 
-catamaranHullBooleanFront(0,200,0);
-catamaranHullBooleanBack(0,100,0);
-//yCube(300,200,200,  150+300,100,100);
+module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        difference(){
+            /*
+            scale([3,1,1])
+            rotate_extrude(angle=90, $fn=300 )
+            translate([-200, 0, 0])       
+            polygon(points=[[5,0],[0,5],[4,60],[8,63],[20,130],[106,190],[126,0]]);
+            */
+            scale([2.3,1,1])
+            color("blue")
+            translate([0,100,0])
+            mirror([1,0,0])
+            rotate([0,0,-90])
+            rotate_extrude(angle=90, $fn=100)
+            translate([300,0,0])
+            rotate([0,0,90])
+            import("../svg/profile_01.svg");
+            //------ cut ---------
+            //top
+            yTube(400,195,300,  -50,-247.8,50,  7.8,0,0, 5,1,1, $fn=300);       
+            //side external      
+            yTube(300,195,200,  0,0,4.7,  -59,0,0, 2.75,1,1, $fn=300);     
+            //cut side internal
+            scale([2.3,1,1])
+            color("red")
+            translate([0,83.2,-24.1])
+            mirror([1,0,0])
+            rotate([0,-16.8,-90])
+            rotate_extrude(angle=90, $fn=100)
+            translate([300,0,0])
+            rotate([0,0,90])
+            import("../svg/profile_01_cut.svg");
+        }//difference
+        //back part
+           translate([0,-193.4,0])
+           mirror([0,0,1])
+           rotate([0,90,0])           
+           linear_extrude(600, scale=0.9)                
+           import("../svg/profile_01_back.svg");
+           
+           chbConnector(0,-45,15, 90,0,0, length=200, height =8);
+           chbConnector(400,-55,15, 90,0,0, length=200, height =8);
+    }//transform
+}//module
 
 module chbConnector(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=210, width=30, height=5){
     translate([px,py,pz])
@@ -12,8 +60,8 @@ module chbConnector(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=210, width=30, height
         difference(){
             yCube(length,width,height, 0,0,0);
             for(i=[-(length/2):20:(length/2)]){
-                yCyl(1,height+10,  i,10,0);
-                yCyl(1,height+10,  i,-10,0);
+                yCyl(1,height+10,  i+10,10,0);
+                yCyl(1,height+10,  i+10,-10,0);
             }//for
         }//difference
     }//transform
