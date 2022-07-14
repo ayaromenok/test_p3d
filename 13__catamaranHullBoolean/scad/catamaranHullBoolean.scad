@@ -1,7 +1,7 @@
 include <../../../../p3d/lib/lib2.scad>
 
 //left
-//catamaranHullBoolean4(0,0,0, length=1129/2, section=3);
+catamaranHullBoolean4(0,0,0, length=1129/2, section=1);
 //right
 //mirror([0,0,1])
 //catamaranHullBoolean4(0,0,0, 180,0,0, length=1129/2, section=3);
@@ -49,8 +49,8 @@ module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=1129, sectio
                 linear_extrude(600, scale=0.9)                
                     import("../svg/profile_01_back.svg");
                 //------ connectors   
-                chbConnector(0,-45,15, 90,0,0, length=200, height =8);
-                chbConnector(400,-55,15, 90,0,0, length=200, height =8);
+                chbConnector(0,-47,15, 90,0,0, length=200, height=10);
+                chbConnector(400,-56,15, 90,0,0, length=200, height=8);
             }//union
             
             _ls = 1129*_scale;        
@@ -73,28 +73,6 @@ module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=1129, sectio
                 }//union
             }//translate
         }//difference
-        
-        /*
-        _ls = 1129*_scale;        
-        _200s = 220*_scale;
-        _p0=-529*_scale;
-        translate([(_p0-_ls/2+section_length*section),-_200s/2+1,_200s/2-1]){
-            //yCube(_ls,_200s,_200s, (_p0-_ls/2+section_length*section),-_200s/2+1,_200s/2-1);
-            difference(){
-                yCube(_ls,_200s,_200s);
-                for (i=[-_200s/3:20:_200s/3])
-                    for (j=[-_200s/3:20:_200s/3])
-                        yCone(5,3,   _ls/2-1.2,i,j, 0,90,180);
-            }//difference
-            union(){
-                yCube(_ls,_200s,_200s, _ls+section_length,0,0);
-                for (i=[-_200s/4:20:_200s/4])
-                    for (j=[-_200s/4:20:_200s/4])
-                        yCone(4.6,2.8,   _ls/2+section_length-1.2,i,j, 0,90,180);
-            }//union
-        }//translate
-        //*/
-        
     }//transform
 }//module
 
