@@ -1,13 +1,13 @@
 include <../../../../p3d/lib/lib2.scad>
 
 //left
-catamaranHullBoolean4(0,0,0, length=1129/2, section=3);
+catamaranHullBoolean4(0,0,0, length=1199/2, section=3);
 //right
 //mirror([0,0,1])
 //catamaranHullBoolean4(0,0,0, 180,0,0, length=1129/2, section=3);
 
-module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=1129, section=0, section_length=150){
-    _scale = length/1129;
+module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=1199, section=0, section_length=150){
+    _scale = length/1199;
     echo(_scale);
     translate([px,py,pz])
     rotate([rx,ry,rz])    
