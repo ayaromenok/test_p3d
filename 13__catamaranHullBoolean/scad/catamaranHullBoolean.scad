@@ -54,7 +54,7 @@ module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=1199, sectio
                 chbConnector(650,-60,27.5, 90,90,0, length=55, height=16);
             }//union
             
-            _ls = 1129*_scale;        
+            _ls = 1199*_scale;        
             _200s = 220*_scale;
             _p0=-529*_scale;
             _puzzle_step=40*_scale;
