@@ -1,7 +1,7 @@
 include <../../../../p3d/lib/lib2.scad>
 
 //left
-catamaranHullBoolean4(0,0,0, length=1129/2, section=1);
+catamaranHullBoolean4(0,0,0, length=1129/2, section=3);
 //right
 //mirror([0,0,1])
 //catamaranHullBoolean4(0,0,0, 180,0,0, length=1129/2, section=3);
@@ -46,11 +46,12 @@ module catamaranHullBoolean4(px=0,py=0,pz=0, rx=0,ry=0,rz=0, length=1129, sectio
                 translate([0,-193.4,0])
                 mirror([0,0,1])
                 rotate([0,90,0])           
-                linear_extrude(600, scale=0.9)                
+                linear_extrude(670, scale=0.9)                
                     import("../svg/profile_01_back.svg");
                 //------ connectors   
                 chbConnector(0,-47,15, 90,0,0, length=200, height=10);
                 chbConnector(400,-56,15, 90,0,0, length=200, height=8);
+                chbConnector(650,-60,27.5, 90,90,0, length=55, height=16);
             }//union
             
             _ls = 1129*_scale;        
