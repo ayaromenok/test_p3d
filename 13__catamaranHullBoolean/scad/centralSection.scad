@@ -2,7 +2,9 @@ include <../../../../p3d/lib/lib2.scad>
 include <../../../../p3d/lib/lib2/ext/motor.scad>
 
 
-catamaranBody(-150,0,0);
+//catamaranBody(-150,0,0);
+//shaftHolderEngine(0,0,0,    0,10,0);        
+//shaftHolderBack(0,0,0, 0,-90,0);
 
 
 module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
@@ -87,18 +89,18 @@ module shaftHolderBack(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
         difference(){
             union(){
                 yMinkCubeSphere(14,16,16,6,   -160,50,-79, 0,-10,0, sx=1.5);
-                yMinkCubeCyl(5,5,79,2,   -160,30,-43, 22,0,0, sx=3.6);
-                yMinkCubeCyl(5,5,79,2,   -160,70,-43, -22,0,0, sx=3.6);
-                yCube(30,16,5, -155,10,-8);
-                yCube(30,16,5, -155,90,-8);
+                yMinkCubeCyl(5,5,76,2,   -160,35,-43, 16,0,0, sx=3.6);
+                yMinkCubeCyl(5,5,76,2,   -160,65,-43, -16,0,0, sx=3.6);
+                yCube(30,16,5, -155,20,-8);
+                yCube(30,16,5, -155,80,-8);
             }//union
             yCyl(4.8,250,   -50,50,-60,  0,-100,0);            
             yCube(10,110,110,   -174,50,-50);
             
-            yCyl(2,20,    -165, 10,-10);
-            yCyl(2,20,    -145, 10,-10);
-            yCyl(2,20,    -165, 90,-10);
-            yCyl(2,20,    -145, 90,-10);
+            yCyl(2,20,    -165, 20,-10);
+            yCyl(2,20,    -145, 20,-10);
+            yCyl(2,20,    -165, 80,-10);
+            yCyl(2,20,    -145, 80,-10);
             
             yCyl(1.4,10, -160,50,-75);
         }//diff
