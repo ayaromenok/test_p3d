@@ -5,6 +5,7 @@ include <../../../../p3d/lib/lib2/ext/motor.scad>
 //catamaranBody(-150,0,0);
 //shaftHolderEngine(0,0,0,    0,10,0);        
 //shaftHolderBack(0,0,0, 0,-90,0);
+//shaftHolderBack(0,0,0, 0,0,0);
 
 
 module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
@@ -19,7 +20,7 @@ module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
         translate([-50,50,-60])
         rotate([0,-100,0]){
             yCyl(4.5,250,   0,0,0);
-            yCyl(20,10,   0,0,140); //prop 40mm
+            yCyl(27.5,10,   0,0,140); //prop 40mm
             yCyl(6,35,   0,0,-140); //prop 40mm
             yCyl(16,32,   0,0,-160); //engine 2212 (14RxL28)
             }//translate
@@ -93,9 +94,18 @@ module shaftHolderBack(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
                 yMinkCubeCyl(5,5,76,2,   -160,65,-43, -16,0,0, sx=3.6);
                 yCube(30,16,5, -155,20,-8);
                 yCube(30,16,5, -155,80,-8);
+                
+                //safety ring
+                difference(){
+                    yTube(36.2,35,10, -163.3,50,-86,  0,90,0);
+                    yCube(11,26,10,  -163.3,50,-50,);
+                    }//diff
+                yCyl(1.5,36,  -163.4,50,-104,    0,0,0,  4);
+                yCyl(1.5,34,  -163.4,67,-95,    45,0,0,  4);
+                yCyl(1.5,34,  -163.4,34,-95,    -45,0,0,  4);
             }//union
             yCyl(4.8,250,   -50,50,-60,  0,-100,0);            
-            yCube(10,110,110,   -174,50,-50);
+            yCube(10,110,210,   -173,50,-50);
             
             yCyl(2,20,    -165, 20,-10);
             yCyl(2,20,    -145, 20,-10);
