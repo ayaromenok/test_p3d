@@ -2,13 +2,13 @@ include <../../../../p3d/lib/lib2.scad>
 include <../../../../p3d/lib/lib2/ext/motor.scad>
 
 
-//catamaranBody(-150,0,0);
-shaftHolderEngine(0,0,5,    0,10,0);    
+catamaranBody(-150,0,0);
+//shaftHolderEngine(0,0,5,    0,10,0);    
 //translate([0,-80,0])    
 //import("../stl/tmp/shaftHolderEngine.stl");
 //shaftHolderBack(0,0,0, 0,-90,0);
 //shaftHolderBack(0,0,0, 0,0,0);
-
+//nameFalke();
 
 module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     translate([px,py,pz])
@@ -28,6 +28,22 @@ module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
             }//translate
     }//transform
 }//module        
+
+module nameFalke(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        linear_extrude(1.2)
+        text(
+            text = "Falke", 
+            size = 15,             
+            valign = "center", 
+            halign = "center",
+            $fn = 50
+            );
+        yCube(44,1, 1.2, -1.5,-7.,0.6);
+    }//transform
+}//module        
+
 
 module shaftHolderEngine(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     translate([px,py,pz])
