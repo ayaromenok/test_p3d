@@ -3,6 +3,8 @@ include <../../../../p3d/lib/lib2/ext/motor.scad>
 
 
 catamaranBody(-150,0,0);
+//engineTurbine(0,20,0, 0,90,45);
+//engineTurbine(0,-20,0, 0,90,cw=0);
 //shaftHolderEngine(0,0,5,    0,10,0);    
 //shaftHolderEngine();
 //shaftHolderEngineCapBack(ry=-80);
@@ -22,6 +24,7 @@ module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
         shaftHolderEngineCapBack();
         shaftHolderEngine();        
         shaftHolderBack();
+        engineTurbine(145,0,10,  0,-10,0);
         
         color("blue")
         translate([-50,50,-60])
@@ -33,6 +36,28 @@ module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
             }//translate
     }//transform
 }//module        
+
+module engineTurbine(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0, cw=1){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        translate([-65,50,-36]){
+            angle=(cw>0)?45:-45;
+            difference(){
+                union(){
+                    yCyl(5,3, ry=90);            
+                    for(i=[0:90:350]){
+                        rotate([i,0,0])
+                        yCube(0.8,12,5,    0,9,0, 0,angle,0);
+                    }//for
+                }//union
+                yCyl(1.70,10,  ry=90);
+                yCyl(5,3, px=3,ry=90); 
+                yCyl(15,3, px=-3,ry=90); 
+            }//difference
+            
+        }//translate
+    }//transform
+}//module   
 
 module nameFalke(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     translate([px,py,pz])
