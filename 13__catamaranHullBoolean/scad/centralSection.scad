@@ -4,6 +4,8 @@ include <../../../../p3d/lib/lib2/ext/motor.scad>
 
 catamaranBody(-150,0,0);
 //shaftHolderEngine(0,0,5,    0,10,0);    
+//shaftHolderEngine();
+//shaftHolderEngineCapFront(ry=90);
 //translate([0,-80,0])    
 //import("../stl/tmp/shaftHolderEngine.stl");
 //shaftHolderBack(0,0,0, 0,-90,0);
@@ -15,6 +17,7 @@ module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     rotate([rx,ry,rz])
     mirror([mx,my,mz]){
         //front(engine) holder
+        shaftHolderEngineCapFront(64.5,0,0);
         shaftHolderEngine();        
         shaftHolderBack();
         
@@ -45,6 +48,27 @@ module nameFalke(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
 }//module        
 
 
+module shaftHolderEngineCapFront(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        scale([0.5,1,1])
+        difference(){
+            yMinkCubeSphere(40,43,68,10,   117,50,-15.6, 0,0);
+            yCube(100,100,100, 79,50,-20); 
+            yCube(100,100,40, 95,50,9);          
+            
+            //holes
+            yCyl(1.7,20,  130,31.5,-20, 0,90,0);
+            yCyl(1.7,20,  130,31.5,-40, 0,90,0);
+            yCyl(1.7,20,  130,68.5,-20, 0,90,0);
+            yCyl(1.7,20,  130,68.5,-40, 0,90,0);
+            //engine
+            yCyl(15,10, 130,50,-28,    0,90,0);  
+        }//difference
+        
+    }//transform
+}//module        
+    
 module shaftHolderEngine(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz])
