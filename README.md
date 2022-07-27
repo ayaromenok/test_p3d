@@ -2,6 +2,7 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
+|[14](https://github.com/ayaromenok/test_p3d/issues/14) | ![](https://github.com/ayaromenok/test_p3d/blob/master/14__woodenRack/png/14.png) | WiP | no comments |\n
 |[13](https://github.com/ayaromenok/test_p3d/issues/13) | ![](https://github.com/ayaromenok/test_p3d/blob/master/13__catamaranHullBoolean/png/13.png) | OK | 2nd version is OK |\n
 |[12](https://github.com/ayaromenok/test_p3d/issues/12) | ![](https://github.com/ayaromenok/test_p3d/blob/master/12__schematicShipModel/png/12.png) | OK | DXF blueprints is OK |\n
 |[10](https://github.com/ayaromenok/test_p3d/issues/10) | ![](https://github.com/ayaromenok/test_p3d/blob/master/10__catamaranHullFreeCad/png/10.png) | OK | DXF>SVG>Loft>3D Offset(intersection + Fill-offset) |\n
@@ -17,4 +18,5 @@
 
 # test_p3d
 [Old test with 2020-2021 stuff](https://github.com/ayaromenok/p3dTest_2020x2021)
+
 
