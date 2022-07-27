@@ -2,7 +2,7 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
-|[13](https://github.com/ayaromenok/test_p3d/issues/13) | ![](https://github.com/ayaromenok/test_p3d/blob/master/13__catamaranHullBoolean/png/13.png) | WiP | 1st version is quite OK |\n
+|[13](https://github.com/ayaromenok/test_p3d/issues/13) | ![](https://github.com/ayaromenok/test_p3d/blob/master/13__catamaranHullBoolean/png/13.png) | OK | 2nd version is OK |\n
 |[12](https://github.com/ayaromenok/test_p3d/issues/12) | ![](https://github.com/ayaromenok/test_p3d/blob/master/12__schematicShipModel/png/12.png) | OK | DXF blueprints is OK |\n
 |[10](https://github.com/ayaromenok/test_p3d/issues/10) | ![](https://github.com/ayaromenok/test_p3d/blob/master/10__catamaranHullFreeCad/png/10.png) | OK | DXF>SVG>Loft>3D Offset(intersection + Fill-offset) |\n
 |[09](https://github.com/ayaromenok/test_p3d/issues/09) | ![](https://github.com/ayaromenok/test_p3d/blob/master/09__catamaranHull/png/09.png) | OK | size is 716x120x105(old is 550x90x70) |\n
