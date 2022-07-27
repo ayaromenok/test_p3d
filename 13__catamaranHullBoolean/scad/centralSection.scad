@@ -2,11 +2,13 @@ include <../../../../p3d/lib/lib2.scad>
 include <../../../../p3d/lib/lib2/ext/motor.scad>
 
 
-catamaranBody(-150,0,0);
-//engineTurbine(0,20,0, 0,90,45);
-//engineTurbine(0,-20,0, 0,90,cw=0);
+
+catamaranBody(-150,0,0);        
+
+//2print
+//engineTurbine(0,0,0, 0,-90,45);
+//engineTurbine(-20,10,0, 0,-90,cw=0);
 //shaftHolderEngine(0,0,5,    0,10,0);    
-//shaftHolderEngine();
 //shaftHolderEngineCapBack(ry=-80);
 //shaftHolderEngineCapFront(ry=90);
 //translate([0,-80,0])    
@@ -15,6 +17,24 @@ catamaranBody(-150,0,0);
 //shaftHolderBack(0,0,0, 0,0,0);
 //nameFalke();
 
+module chassisFront(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0, cw=1){
+    translate([px,py,pz])
+    rotate([rx,ry,rz]){
+        translate([-50,0,-6])
+        difference(){
+            yCube(100,100,10,  -10,50,0);
+            yCube(80,30,50,     -10,50,0);            
+            
+            for (i=[0:20:50]){
+                for (j=[20:20:80]){
+                    yCyl(1,20,  i-15,j,-10);
+                }//for j
+            }//for i            
+        }//diff
+    }//transform
+}//module        
+
+    
 module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz])
@@ -25,6 +45,7 @@ module catamaranBody(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0){
         shaftHolderEngine();        
         shaftHolderBack();
         engineTurbine(145,0,10,  0,-10,0);
+        chassisFront(150,0,0);
         
         color("blue")
         translate([-50,50,-60])
@@ -47,12 +68,12 @@ module engineTurbine(px=0,py=0,pz=0, rx=0,ry=0,rz=0, mx=0,my=0,mz=0, cw=1){
                     yCyl(5,3, ry=90);            
                     for(i=[0:90:350]){
                         rotate([i,0,0])
-                        yCube(0.8,12,5,    0,9,0, 0,angle,0);
+                        yCube(0.8,12,7,    0,9,0, 0,angle,-12);
                     }//for
                 }//union
                 yCyl(1.70,10,  ry=90);
                 yCyl(5,3, px=3,ry=90); 
-                yCyl(15,3, px=-3,ry=90); 
+                yCyl(17,3, px=-3,ry=90); 
             }//difference
             
         }//translate
