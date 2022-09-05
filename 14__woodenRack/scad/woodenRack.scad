@@ -29,7 +29,8 @@ module woodenRackSide(px=0,py=0,pz=0, rx=0,ry=0,rz=0, height=1000,width=300,step
         for (i=[step:step:height+1]){
             yCube(20,width,30,  0,0,i);
         }//for
-        
+        yCube(10,20,width*1.35,   15,0,step*1.5,  45,0,0);
+        yCube(10,20,width*1.35,   15,0,step*3.5,  -45,0,0);
         
     }//transform
 }//module
