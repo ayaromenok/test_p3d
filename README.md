@@ -2,6 +2,7 @@
 
 | # | Image | Status | Description |
 | --- | --- | --- | --- |
+|[16](https://github.com/ayaromenok/test_p3d/issues/16) | ![](https://github.com/ayaromenok/test_p3d/blob/master/16_jalousie/png/16.png) | OK |  |\n
 |[14](https://github.com/ayaromenok/test_p3d/issues/14) | ![](https://github.com/ayaromenok/test_p3d/blob/master/14__woodenRack/png/14.png) | OK | need to finish real rack |\n
 |[13](https://github.com/ayaromenok/test_p3d/issues/13) | ![](https://github.com/ayaromenok/test_p3d/blob/master/13__catamaranHullBoolean/png/13.png) | OK | 2nd version is OK |\n
 |[12](https://github.com/ayaromenok/test_p3d/issues/12) | ![](https://github.com/ayaromenok/test_p3d/blob/master/12__schematicShipModel/png/12.png) | OK | DXF blueprints is OK |\n
@@ -20,3 +21,5 @@
 [Old test with 2020-2021 stuff](https://github.com/ayaromenok/p3dTest_2020x2021)
 
 
+|[15](https://github.com/ayaromenok/test_p3d/issues/15) | ![](https://github.com/ayaromenok/test_p3d/blob/master/15__belemTowerStub/png/15.png) | NoK | comment |\n
+|[16](https://github.com/ayaromenok/test_p3d/issues/16) | ![](https://github.com/ayaromenok/test_p3d/blob/master/16_jalousie/png/16.png) | NoK | comment |\n
