@@ -23,3 +23,4 @@
 
 |[15](https://github.com/ayaromenok/test_p3d/issues/15) | ![](https://github.com/ayaromenok/test_p3d/blob/master/15__belemTowerStub/png/15.png) | NoK | comment |\n
 |[16](https://github.com/ayaromenok/test_p3d/issues/16) | ![](https://github.com/ayaromenok/test_p3d/blob/master/16_jalousie/png/16.png) | NoK | comment |\n
+|[17](https://github.com/ayaromenok/test_p3d/issues/17) | ![](https://github.com/ayaromenok/test_p3d/blob/master/17_plasticTube200x55mmHolder/png/17.png) | NoK | comment |\n
