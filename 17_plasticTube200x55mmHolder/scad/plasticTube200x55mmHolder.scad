@@ -1,20 +1,21 @@
 include <../../../../p3d/lib/lib2.scad>
 
-plasticTube200x55mmHolder();
+plasticTube();
 
-module plasticTube200x55mmHolder(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
+module plasticTube(px=0,py=0,pz=0, rx=0,ry=0,rz=0){
     translate([px,py,pz])
     rotate([rx,ry,rz]){
-        difference(){
-        yCube(170,30,8,    0,-10,0);
+        difference(){        
+            union(){
+                yCyl(20,86);
+                //yCyl(30,10);
+                yCone(30,30, 0,0,-28);
+                yCone(30,30, 0,0,28, 180,0,0);
+            }//union
+        yCyl(10,90);
+        yCyl(11.2,7, 0,0,40);
+        yCyl(11.2,7, 0,0,-40);
         
-        yCyl(4.4,20, 76,0,0);
-        yCube(8.8,20,20,   73,9,0, 0,0,20);
-        yCube(8.8,20,20,   79,9,0, 0,0,-20);
-        
-        yCube(4.8,40,20,   -73,-30,0, 0,0,0);
-        yCube(200,20,20,   38,-18,0, 0,0,0);
         }//difference
     }//transform
 }//module
-
