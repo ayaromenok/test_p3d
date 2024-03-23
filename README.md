@@ -26,3 +26,4 @@
 |[17](https://github.com/ayaromenok/test_p3d/issues/17) | ![](https://github.com/ayaromenok/test_p3d/blob/master/17_plasticTube200x55mmHolder/png/17.png) | NoK | comment |\n
 |[17](https://github.com/ayaromenok/test_p3d/issues/17) | ![](https://github.com/ayaromenok/test_p3d/blob/master/17__flowpot_support/png/17.png) | NoK | comment |\n
 |[18](https://github.com/ayaromenok/test_p3d/issues/18) | ![](https://github.com/ayaromenok/test_p3d/blob/master/18__filament_cooler_40mm/png/18.png) | NoK | comment |\n
+|[19](https://github.com/ayaromenok/test_p3d/issues/19) | ![](https://github.com/ayaromenok/test_p3d/blob/master/19__fineDetailsModelX33/png/19.png) | NoK | comment |\n
