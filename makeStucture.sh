@@ -13,6 +13,7 @@ mkdir stl
 mkdir dxf
 mkdir scad
 mkdir gcode
+mkdir blend
 git push --set-upstream origin $1
 echo "dxf/*.dxf~" > .gitignore
 cd scad
